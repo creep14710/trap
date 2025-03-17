@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГипсРозыск</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff6f61;
+        }
+
+        .info {
+            padding: 15px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+        }
+
+        .info h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+
+        .info p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Дополнительные эффекты */
+        .card:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .card:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .card:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        .card:nth-child(5) {
+            animation-delay: 1s;
+        }
+        .card:nth-child(6) {
+            animation-delay: 1.2s;
+        }
+        .card:nth-child(7) {
+            animation-delay: 1.4s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ГипсРозыск</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <!-- Карточка 1 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:45:06.jpg" alt="Человек 1">
+                <div class="info">
+                    <h2>Вадим Панков</h2>
+                    <p><strong>Рост:</strong> 184 см</p>
+                    <p><strong>Вес:</strong> 74 кг</p>
+                    <p><strong>Телосложение:</strong> Слюняво-Усатое</p>
+                    <p><strong>Отличительные черты:</strong> Усатый-Волосатый</p>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:47:08.jpg" alt="Человек 2">
+                <div class="info">
+                    <h2>Элбак Элбакян</h2>
+                    <p><strong>Рост:</strong> 170 см</p>
+                    <p><strong>Вес:</strong> 65 кг</p>
+                    <p><strong>Телосложение:</strong> Бодибилдер</p>
+                    <p><strong>Отличительные черты:</strong> Борода</p>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:48:03.jpg" alt="Человек 3">
+                <div class="info">
+                    <h2>Кирилл Михеев</h2>
+                    <p><strong>Рост:</strong> 182 см</p>
+                    <p><strong>Вес:</strong> 85 кг</p>
+                    <p><strong>Телосложение:</strong> Обычно</p>
+                    <p><strong>Отличительные черты:</strong> Родинка на лбу</p>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:48:39.jpg" alt="Человек 4">
+                <div class="info">
+                    <h2>Андрей Афанасьев</h2>
+                    <p><strong>Рост:</strong> 178 см</p>
+                    <p><strong>Вес:</strong> 80 кг</p>
+                    <p><strong>Телосложение:</strong> Шрековское</p>
+                    <p><strong>Отличительные черты:</strong> Шрек</p>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:49:07.jpg" alt="Человек 5">
+                <div class="info">
+                    <h2>Максим Кукуев</h2>
+                    <p><strong>Рост:</strong> 178 см</p>
+                    <p><strong>Вес:</strong> 70 кг</p>
+                    <p><strong>Телосложение:</strong> Спортивное</p>
+                    <p><strong>Отличительные черты:</strong> Нефор-Моряк</p>
+                </div>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:57:02.jpg" alt="Человек 6">
+                <div class="info">
+                    <h2>Егор Панюков</h2>
+                    <p><strong>Рост:</strong> 176 см</p>
+                    <p><strong>Вес:</strong> 74 кг</p>
+                    <p><strong>Телосложение:</strong> Спортивное</p>
+                    <p><strong>Отличительные черты:</strong> Трепер</p>
+                </div>
+            </div>
+
+            <!-- Карточка 7 -->
+            <div class="card">
+                <img src="file:///var/folders/x5/xdg4rvg142bcr6fxbd45gvj00000gn/T/ru.keepcoder.Telegram/IMAGE%202025-03-17%2015:52:39.jpg" alt="Человек 7">
+                <div class="info">
+                    <h2>Глеб Гурьев</h2>
+                    <p><strong>Рост:</strong> 177 см</p>
+                    <p><strong>Вес:</strong> 76 кг</p>
+                    <p><strong>Телосложение:</strong> Бодибилдер</p>
+                    <p><strong>Отличительные черты:</strong> Трепер</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ГипсРозыск</p>
+    </footer>
+</body>
+</html>
